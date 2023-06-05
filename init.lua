@@ -82,5 +82,6 @@ return {
     --   },
     -- }
     vim.fn.setenv("FIG_TERM", nil)
+    vim.o.textwidth = 80
   end,
 }
