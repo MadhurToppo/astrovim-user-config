@@ -3,7 +3,6 @@ return {
   opts = {
     groups = { -- table: default groups
       "Normal",
-      "NormalFloat",
       "NormalNC",
       "Comment",
       "Constant",
@@ -26,7 +25,17 @@ return {
       "CursorLineNr",
       "EndOfBuffer",
     },
-    extra_groups = {}, -- table: additional groups that should be cleared
+    extra_groups = {
+      "StatusLine",
+      "StatusLineNC",
+      "NormalFloat",
+      "NvimTreeNormal",
+      "NvimTreeNormalNC",
+      "NvimTreeNormalFloat",
+      "NvimTreeEndOfBuffer",
+      "NvimTreeStatusLine",
+      "NvimTreeStatusLineNc",
+    }, -- table: additional groups that should be cleared
     exclude_groups = {}, -- table: groups you don't want to clear
     -- highlights = {
     --   astrodark = {
