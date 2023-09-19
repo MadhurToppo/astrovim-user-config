@@ -83,5 +83,8 @@ return {
     -- }
     vim.fn.setenv("FIG_TERM", nil)
     vim.o.textwidth = 80
+    vim.o.cursorline = true
+    vim.cmd "highlight CursorLineNr guibg=none guifg=none"
+    vim.opt.cursorlineopt = "number"
   end,
 }
