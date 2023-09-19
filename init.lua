@@ -69,22 +69,11 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     ["Foofile"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
     vim.fn.setenv("FIG_TERM", nil)
     vim.o.textwidth = 80
     vim.o.cursorline = true
     vim.cmd "highlight CursorLineNr guibg=none guifg=none"
     vim.opt.cursorlineopt = "number"
+    vim.cmd "set laststatus=0"
   end,
 }
