@@ -19,7 +19,7 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "default", -- for transparent theme
-  colorscheme = "monokai-pro",
+  colorscheme = "gruvbox",
   -- colorscheme = "Astrodark",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -72,9 +72,7 @@ return {
   polish = function()
     vim.fn.setenv("FIG_TERM", nil)
     vim.o.textwidth = 80
-    vim.o.cursorline = true
-    vim.cmd "highlight CursorLineNr guibg=none guifg=none"
     vim.opt.cursorlineopt = "number"
-    vim.cmd "set laststatus=0"
+    vim.cmd "hi clear StatusLine"
   end,
 }
