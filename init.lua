@@ -19,7 +19,8 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "default", -- for transparent theme
-  colorscheme = "Astrodark",
+  colorscheme = "monokai-pro",
+  -- colorscheme = "Astrodark",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
