@@ -76,5 +76,7 @@ return {
     vim.cmd "hi clear StatusLine"
     vim.cmd "hi LineNrAbove guifg=red ctermfg=red"
     vim.cmd "hi LineNrBelow guifg=green ctermfg=green"
+    vim.api.nvim_set_hl(0, "WinBar", {})
+    vim.api.nvim_set_hl(0, "TabLine", {})
   end,
 }
