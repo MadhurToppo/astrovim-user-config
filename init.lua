@@ -74,5 +74,7 @@ return {
     vim.o.textwidth = 80
     vim.opt.cursorlineopt = "number"
     vim.cmd "hi clear StatusLine"
+    vim.cmd "hi LineNrAbove guifg=red ctermfg=red"
+    vim.cmd "hi LineNrBelow guifg=green ctermfg=green"
   end,
 }
