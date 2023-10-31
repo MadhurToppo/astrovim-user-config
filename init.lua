@@ -75,7 +75,7 @@ return {
     vim.opt.cursorlineopt = "number"
     vim.cmd "hi clear StatusLine"
     vim.cmd "hi LineNrAbove guifg=SeaGreen3"
-    vim.cmd "hi LineNrBelow guifg=magenta"
+    vim.cmd "hi LineNrBelow guifg=HotPink1"
     vim.api.nvim_set_hl(0, "WinBar", {})
     vim.api.nvim_set_hl(0, "TabLine", {})
   end,
